@@ -36,7 +36,7 @@ Each assignment builds upon the previous one, refining the client-side applicati
 - **skim509.html**         - Main HTML file for the application.
 - **skim509.js**             - JavaScript logic to handle API interactions.
 
-### A4 (Assignment 4)
+### A4 
 - **skim509.svg**            - SVG graphics for enhanced visual appeal.
 
 ### A5
