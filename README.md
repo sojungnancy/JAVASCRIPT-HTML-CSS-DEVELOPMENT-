@@ -50,5 +50,6 @@ Each assignment builds upon the previous one, refining the client-side applicati
 This project demonstrates proficiency in **frontend development, data visualization, and structured data validation, emphasizing best practices in API integration, graphics, and schema design.**
 
 
+
 > 📌 **COMPSCI 335 | University of Auckland**
 
