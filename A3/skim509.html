@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>New Zealand Sign Language</title>
+
+    <link rel="stylesheet" href="./skim509.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="./skim509.js" defer="defer"></script>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cws.auckland.ac.nz/nzsl/api/Logo"
+    />
+  </head>
+  <body>
+    <!-- Main container for content -->
+    <header>
+      <img
+        src="https://cws.auckland.ac.nz/nzsl/api/Logo"
+        alt="logo"
+        style="width: 200px"
+      />
+      <h1>Lets Learn NZSL</h1>
+    </header>
+
+    <nav>
+      <!-- Navigation bar -->
+      <ul>
+        <li><button id="HomeButton">Home</button></li>
+        <li><button id="NZSLButton">NZSL</button></li>
+        <li><button id="EventsButton">Events</button></li>
+        <li><button id="RegisterButton">Register</button></li>
+        <li><button id="GuestBookButton">Guest Book</button></li>
+      </ul>
+    </nav>
+
+    <section id="Home">
+      <h2>Home</h2>
+      <p>
+        Welcome to our web application that helps us to learn a wee bit of NZSL.
+      </p>
+    </section>
+
+    <section id="NZSL" style="display: none">
+      <h2>NZSL</h2>
+      <input
+        id="searchInput"
+        type="text"
+        placeholder="search: id or description"
+      />
+      <ul id="signImageContainer"></ul>
+    </section>
+
+    <section id="Events" style="display: none">
+      <h2>Events</h2>
+      <ul id="eventContainer"></ul>
+    </section>
+
+    <section id="Register" style="display: none">
+      <h2>Register</h2>
+      <p>Username</p>
+      <input id="username" type="text" />
+      <p>Password</p>
+      <input id="password" type="text" />
+      <p>Address</p>
+      <input id="address" type="text" />
+
+      <button id="rb">Register</button>
+    </section>
+
+    <section id="GuestBook" style="display: none">
+      <h2>Guest Book</h2>
+      <p id="loginstatus"></p>
+      <button id="logout" style="display: none">logout</button>
+      <p>we appreciate your comments</p>
+
+      <div id="logincontainer" style="display: none">
+        <h3>Login</h3>
+        <p>Username</p>
+        <input id="loginUsername" />
+        <p>Password</p>
+        <input id="loginPassword" />
+        <button id="login">login</button>
+      </div>
+      <input id="commentInput" />
+      <button id="postComment">post comment</button>
+      <p>Comments</p>
+      <div id="commentContainer"></div>
+      <!-- <iframe src="https://cws.auckland.ac.nz/nzsl/api/Comments"></iframe> -->
+    </section>
+
+    <div id="version"></div>
+  </body>
+</html>

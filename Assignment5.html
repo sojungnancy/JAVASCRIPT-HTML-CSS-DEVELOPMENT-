@@ -1,0 +1,198 @@
+﻿<html>
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+   <title>XSD</title>
+</head>
+<body>
+   <div>
+      <p style="border: 1px solid red; border-radius: 5px; padding: 10px;
+        background-color: pink; color: red;">
+         <span style="font-size: xx-large;">&#x26a0;</span>
+         Sharing assignment solutions and source code does not help learning. Consequently, our academic integrity policy does not permit sharing of solutions or source code leading to solutions, nor does it allow sourcing solutions or source code from any third party. Violation of this will result in your assignment submission attracting no marks, and you may face further disciplinary action. Therefore, please do not share assignments, assignment solutions and/or source code leading to assignment solutions, or use material from others in your assignments. You must not publish assignments or solutions in any form online at any time. You will be liable if someone copies your solution. There are also copyright and IP issues. Please come talk to us if you have any doubt over what is legitimate and what is not.
+         <br />
+         You can refer to online tutorials and resources. However, please learn from them and implement the solutions yourself based on what you learnt from those sources. Do not blindly copy from online sources. If there is a real need to copy some code snippet, please ensure (a) you understand and are able to explain what the code snippet does, and (b) cite the source in a comment directly above the snippet.
+         <br />
+         Don't leave your computers, devices, and belongings unattended — you must secure these at all times to prevent anyone having access to your assignments or solutions. If others are found to have used your solution, you will also face disciplinary action.
+      </p>
+      <h3>Part 1: XML Schema</h3>
+      <p>
+         Game moves in <a href="https://en.wikipedia.org/wiki/Rules_of_chess">Chess</a> may be specified as follows:
+      </p>
+      <div>
+         <pre style="background-color: lightgray;">
+&lt;moves&gt;
+   &lt;move&gt;
+      &lt;piece&gt;Rb&lt;/piece&gt;
+      &lt;to&gt;bin&lt;/to&gt;
+      &lt;from&gt;a6&lt;/from&gt;
+   &lt;/move&gt;
+   &lt;move&gt;
+      &lt;piece&gt;Pw&lt;/piece&gt;
+      &lt;from&gt;b5&lt;/from&gt;
+      &lt;to&gt;a6&lt;/to&gt;
+   &lt;/move&gt;
+&lt;/moves&gt;</pre>
+      </div>
+      <p>
+         Develop an XML schema that captures such moves.
+         Your schema should be such that the above set of moves should conform to the schema.
+      </p>
+      <p>
+         The following list of rules should apply to the XML instances permitted by your schema.
+      </p>
+      <ol>
+         <li>
+            The element <code>moves</code> should contain at least one <code>move</code>,
+            but can contain more.
+         </li>
+         <li>
+            The element <code>move</code> should contain one each of the elements:
+            <code>piece</code>, <code>to</code>, and <code>from</code>. These elements
+            can be in any order.
+         </li>
+         <li>
+            The element <code>piece</code> must contain a valid piece name:
+            Kb, Qb, Rb, Bb, Nb, Pb, Kw, Qw, Rw, Bw, Nw, or Pw.
+         </li>
+         <li>
+            The element <code>from</code> must be a valid board location. For example,
+            a8 and f5 are valid board locations, while p3 and e9 are not.
+         </li>
+         <li>
+            The element <code>to</code> must be a valid board location as in <code>from</code>.
+            However, for the <code>to</code> element <em>bin</em> is also valid (since a piece
+            can be moved to the bin).
+         </li>
+      </ol>
+      <p>
+         Please name your schema file <em>UPI</em>-Schema1.xsd
+         where <em>UPI</em> is your UPI.
+      </p>
+
+      <h4>Schema V2</h4>
+      <p>
+         We now want to revise the previous schema making the
+         <code>piece</code> field an attribute.
+         Since the piece is central to a move,
+         this attribute is always required in any valid move.
+         The valid values of the attribute <em>piece</em> still follow
+         the valid values of the <code>piece</code> element used
+         in the first schema.
+      </p>
+      <p>
+         The following XML instance conforms to this revised schema.
+      </p>
+      <pre style="background-color: lightgray;">
+&lt;moves&gt;
+   &lt;move piece=&quot;Rb&quot;&gt;
+      &lt;to&gt;bin&lt;/to&gt;
+      &lt;from&gt;a6&lt;/from&gt;
+   &lt;/move&gt;
+   &lt;move piece=&quot;Pw&quot;&gt;
+      &lt;from&gt;b5&lt;/from&gt;
+      &lt;to&gt;a6&lt;/to&gt;
+   &lt;/move&gt;
+&lt;/moves&gt;</pre>
+      <p>
+         Develop the revised schema, and name this schema file <em>UPI</em>-Schema2.xsd
+         where <em>UPI</em> is your UPI.
+      </p>
+      <p>
+         All schemas need to be checked using the XML schema validator supplied
+         to you in the course &mdash; online validators may not be robust.
+         Those that do not pass the supplied validator will not attract any mark.
+      </p>
+      <p>
+         Ensure you form your own additional test cases and test both of your schemas thoroughly.
+         Make sure you have test cases that test schema conformance as well as non-conformance.
+      </p>
+      <p>
+         All schemas are to be hand-crafted. Machine-generated schemas will not attract any mark.
+      </p>
+      <h3>Part 2: Reflection</h3>
+      <p>
+         As a normal part of the course, we expect students to reflect on their own practices.
+         This is an important part of being a professional. As part of the activity of the course,
+         we would like you to complete five questions asked in this <a href="https://forms.gle/SYY5bZDM1VWciKqQ6">Google form</a>.
+         Your UPI (email address) will be recorded so that we can award you participation marks.
+         You must login to Google with your University account (i.e., <em>UPI</em>@aucklanduni.ac.nz,
+         where <em>UPI</em> is your University UPI).
+      </p>
+      <h3>Part 3: SET Feedback</h3>
+      <p>
+         We want to hear from your opinion about what went well in the course, and what we could have done better.
+         To this end, we ask you to fill the course evaluation survey. To encourage all of you to fill this,
+         we are allocating small percentage of marks to this survey. Please complete the survey,
+         and submit a proof of completion (e.g., a screenshot of the very last page of your completed survey).
+         The survey is anonymous, so please redact any identifying information from your proof.
+         The proof of completion must be an image file in the JPG format.
+      </p>
+      <h3>
+         Submission
+      </h3>
+      <p>
+         Please submit to the <a href="https://adb.auckland.ac.nz/">
+            Assignment Dropbox
+         </a> the following items.
+      </p>
+      <ol>
+         <li>
+            The first schema file (called <em>UPI-Schema1.xsd</em> where <em>UPI</em> is your UPI).
+            A size limit of 300 kB will apply.
+         </li>
+         <li>
+            The second schema file (called <em>UPI-Schema2.xsd</em> where <em>UPI</em> is your UPI).
+            A size limit of 300 kB will apply.
+         </li>
+         <li>
+            Proof of completion of SET (called <em>UPI.jpg</em> where <em>UPI</em> is your UPI).
+            A size limit of 300 kB will apply.
+         </li>
+      </ol>
+      <p>
+         Please read the following important information regarding your submission.
+      </p>
+      <ol>
+         <li>
+            You can submit to ADB multiple times, and we mark the latest submission.
+            So please <b>submit your work when you achieve a key milestone</b>.
+            This way, you have a partial submission to attract some marks even
+            if you could not proceed further on the assignment in the last days
+            before the final submission. This also shows us your steady progress
+            rather than a last minute job.
+         </li>
+         <li>
+            You can download your submission to verify what you submitted to ADB.
+            You must download and test your submission.
+         </li>
+         <li>
+            There will <u>not</u> be any extensions possible, so please do not ask
+            for extensions. If you are planning to start a couple of days prior
+            to the deadline, you take the risk of not being able to complete the assignment.
+         </li>
+
+      </ol>
+      <h3>Learning Outcomes</h3>
+      <ol>
+         <li>Be able to understand XML.</li>
+         <li>Be able to understand and construct XML Schemas.</li>
+      </ol>
+      <h3>
+         Additional Tasks
+      </h3>
+      <p>
+         See how you could auto-generate classes that correspond to the schemas you formulated
+         in Part 1.
+         There are tools to do this. Find out if there is a tool for your favourite programming
+         language.
+      </p>
+      <p>
+         Using these classes you generated, write a program that takes a valid XML instance,
+         and prints out the elements in a form you deem appropriate.
+      </p>
+      <p>
+         These additional tasks are for your learning, and do not contribute to any marks.
+      </p>
+   </div>
+</body>
+</html>

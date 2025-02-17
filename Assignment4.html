@@ -1,0 +1,251 @@
+﻿<html>
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+   <title>SVG</title>
+</head>
+<body>
+   <div>
+      <h2>
+         Scalable Vector Graphics
+      </h2>
+      <p style="border: 1px solid red; border-radius: 5px; padding: 10px;
+        background-color: pink; color: red;">
+         <span style="font-size: xx-large;">&#x26a0;</span>
+         Sharing assignment solutions and source code does not help learning. Consequently, our academic integrity policy does not permit sharing of solutions or source code leading to solutions, nor does it allow sourcing solutions or source code from any third party. Violation of this will result in your assignment submission attracting no marks, and you may face further disciplinary action. Therefore, please do not share assignments, assignment solutions and/or source code leading to assignment solutions, or use material from others in your assignments. You must not publish assignments or solutions in any form online at any time. You will be liable if someone copies your solution. There are also copyright and IP issues. Please come talk to us if you have any doubt over what is legitimate and what is not.
+         <br />
+         You can refer to online tutorials and resources. However, please learn from them and implement the solutions yourself based on what you learnt from those sources. Do not blindly copy from online sources. If there is a real need to copy some code snippet, please ensure (a) you understand and are able to explain what the code snippet does, and (b) cite the source in a comment directly above the snippet.
+         <br />
+         Don't leave your computers, devices, and belongings unattended — you must secure these at all times to prevent anyone having access to your assignments or solutions. If others are found to have used your solution, you will also face disciplinary action.
+      </p>
+      <h3>
+         Part 1: SVG Logo
+      </h3>
+      <p>
+         <img alt="Logo" src="https://cws.auckland.ac.nz/nzsl/api/Logo"
+              style="width: 30%; max-width: 300px; display: inline-block; float: right; vertical-align: middle;" />
+      </p>
+      <p>
+         In the previous assignment, you used the SVG logo, shown here, of the
+         NZSL web application.
+      </p>
+      <p>
+         The logo consists of a machine-generated SVG &lt;path&gt; to represent
+         simple shapes. This is not ideal. Not only this &lt;path&gt;
+         is difficult to comprehend, but also it makes changes difficult
+         (can you see any other cons?). Consequently, you are asked to
+         re-do the logo using appropriate high-level SVG objects other than &lt;path&gt;s
+         (e.g., &lt;rect&gt;s, &lt;circle&gt;s, &lt;ellipse&gt;s, etc.).
+      </p>
+      <p>
+         Your revised logo should be as identical to the current logo as possible.
+         You can overlay the logos to check if they are identical or not.
+      </p>
+      <p>
+         You need to do the logo by hand &mdash; that is, you are not allowed to use
+         a design tool such as <em>Inkscape</em>.
+      </p>
+      <h3>
+         Part 2: Log of User Visits
+      </h3>
+      <p>
+         You might have noted the <code>Log</code> endpoint of the
+         service backend at
+         <a href="https://cws.auckland.ac.nz/nzsl/swagger/index.html">https://cws.auckland.ac.nz/nzsl/swagger/index.html</a>.
+         This endpoint returns the daily counts of user visits and unique user visits to the server.
+      </p>
+      <p>
+         You are now asked to write a single-page web application that consumes this data,
+         and renders the corresponding line graph that displays both the counts of visits as well as the counts
+         of unique visits. For verification, include the source data below the graph.
+      </p>
+      <p>
+         The graph must be generated dynamically, and it should be an SVG. The graph should be scaled appropriately
+         and should include appropriate titles and a legend. See a sample graph below.
+      </p>
+      <div style="background-color: lightgray; color: black; border: 1px dotted black; padding: 10px;">
+         <h3>Visit Log</h3>
+         <img src="https://i.imgur.com/1Fx2ywR.png" style="width: 100%;" />
+         <table style="width: 100%;">
+            <tr>
+               <td style="text-align: left;">
+                  31/07/2024
+               </td>
+               <td style="text-align: right;">
+                  12/08/2024
+               </td>
+            </tr>
+         </table>
+         <table>
+            <tr style="padding: 5ex;">
+               <td>Legend:</td>
+               <td><hr style="background-color: red; width: 10ex; height: 3px; border: none;"></td>
+               <td style="color: red;">Visits</td>
+               <td><hr style="background-color: green; width: 10ex; height: 3px; border: none;"></td>
+               <td style="color: green;">Unique visits</td>
+            </tr>
+         </table>
+         <p style="font-size: xx-small; text-align: center;">
+            240,248,147,273,285,162,223,286,265,231,257,288,235
+            <br>
+            220,203,120,210,199,126,173,174,262,166,239,175,190
+         </p>
+      </div>
+      <p>
+         If you have completed the previous assignment, and would like to include this log as a seperate logical
+         section of the previous assignment, you are welcome to do so.
+      </p>
+      <br />
+
+      <h3>
+         Submission
+      </h3>
+      <p>
+         Your SVGs should render in any modern browser and should scale.
+         You should not use any third party libraries or frameworks.
+      </p>
+      <p>
+         Please submit to the
+         <a href="https://adb.auckland.ac.nz/">Assignment Dropbox</a>
+         the following items.
+      </p>
+      <ol>
+         <li>
+            The revised logo SVG file for Part 1 (called <em>UPI.svg</em> where <em>UPI</em> is your UPI).
+            A size limit of 300 kB will apply.
+         </li>
+         <li>
+            The HTML file for Part 2 (called <em>UPI.html</em> where <em>UPI</em> is your UPI).
+            A size limit of 300 kB will apply.
+         </li>
+         <li>
+            The JavaScript file for Part 2 (called <em>UPI.js</em> where <em>UPI</em> is your UPI).
+            A size limit of 300 kB will apply.
+         </li>
+         <li>
+            The CSS file for Part 2 (called <em>UPI.css</em> where <em>UPI</em> is your UPI).
+            A size limit of 300 kB will apply.
+         </li>
+      </ol>
+      <p>
+         Please read the following important information regarding your submission.
+      </p>
+      <ol>
+         <li>
+            You can submit to ADB multiple times, and we mark the latest submission.
+            So please <b>submit your work when you achieve a key milestone</b>
+            (e.g., when you have completed the navigation between logical sections,
+            and as you complete a major functionality in each logical section).
+            This way, you have a partial submission to attract some marks even
+            if you could not proceed further on the assignment in the last days
+            before the final submission. This also shows us your steady progress
+            rather than a last minute job.
+         </li>
+         <li>
+            You can download your submission to verify what you submitted to ADB.
+            You must download and test your submission, putting yourself in the
+            marker's shoes. This will iron out silly mistakes (such as incorrect
+            filenames for .CSS and .JS files). If you don't do this testing,
+            your submission might attract zero marks or a hefty penalty, so please
+            do your part before the submission rather than after the marking.
+         </li>
+         <li>
+            There will <u>not</u> be any extensions possible, so please do not ask
+            for extensions. If you are planning to start a couple of days prior
+            to the deadline, you take the risk of not being able to complete the assignment.
+         </li>
+
+      </ol>
+      <h3>Learning Outcomes</h3>
+      <ol>
+         <li>Be able to construct SVGs statically (i.e., manually).</li>
+         <li>Be able to construct SVGs dynamically (i.e., programmatically).</li>
+         <li>Be able use SVGs as basic elements of infographics.</li>
+      </ol>
+      <h3>Test Plan</h3>
+      <p>
+         Developing a test plan is an important aspect of software development.
+         If you don't do a good one, you stand to produce low quality software
+         which can put off your customers. Please imagine you are a tester,
+         and pay attention to forming a good test plan. Not only you form a test plan,
+         but also you execute it carefully.
+      </p>
+      <p>
+         You need to think about how you would test and validate your application.
+         To help you get started, here are a few points that might help you.
+      </p>
+      <ol>
+         <li>
+            P1: Logo SVG is visually similar to that supplied
+         </li>
+         <li>
+            P1: SVG scales as you resize browser
+         </li>
+         <li>
+            P1: The SVG is geometrically "almost identical" to that supplied
+         </li>
+         <li>
+            P1: SVG transparency - transparent areas should be transparent
+         </li>
+         <li>
+            P2: Being able to show the source data from the server
+         </li>
+         <li>
+            P2: Being able to show the graph
+         </li>
+         <li>
+            P2: Correctly formed line graph for the visits reflecting the data supplied by the server
+         </li>
+         <li>
+            P2: Correctly formed line graph for the unique visits reflecting the data supplied by the server
+         </li>
+         <li>
+            P2: Correcly labelled y-axis.
+         </li>
+         <li>
+            P2: Correcly labelled x-axis.
+         </li>
+         <li>
+            P2: Correcly displayed legend.
+         </li>
+         <li>
+            P2: The infographics  scales as you resize the browser
+         </li>
+      </ol>
+      <p>
+         Please test every little step you take before you go to the next step.
+         In your browser, always keep the debugger panel open during your testing.
+         Make sure that there are no bugs reported there. When there are issues,
+         please read the error message carefully. Almost always these error messages
+         tell you what the problem is. Please read and try to understand these messages.
+         If there are
+         server errors, chances are that you are sending in a malformed request.
+         Again read the error message carefully, and this will shed some light
+         into what you might be doing wrong.
+      </p>
+      <p>
+         A short demo of a sample application is available
+         <a href="https://auckland.au.panopto.com/Panopto/Pages/Viewer.aspx?id=70b069f9-2e87-43e0-92e2-b1d7015341e1">here</a>.
+      </p>
+      <h3>Important Notes</h3>
+      <ul>
+         <li>
+            You should be carefully read and understand what the School of Computer Science
+            expects from you in terms of academic integrity:
+            <a href="https://academicintegrity.cs.auckland.ac.nz/">https://academicintegrity.cs.auckland.ac.nz/</a>.
+            Non-compliance may result in losing all the marks.
+            Pay attention to this too: <em>
+               You must not post your solution online
+               on public websites. Your online solutions will encourage other students
+               to copy your solution. Private GitHub repositories and other private
+               online storage drives are acceptable, and you can also share your solution
+               privately with prospective employers.
+            </em>
+         </li>
+         <li>
+            Use of third party libraries and frameworks are not allowed.
+            We will check for this, and there will be a substantial penalty for using them.
+         </li>
+      </ul>
+   </div>
+</body>
+</html>

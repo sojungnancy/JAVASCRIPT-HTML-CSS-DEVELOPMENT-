@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Your Page Title</title>
+
+    <link rel="stylesheet" href="./skim509.css" />
+    <script src="./skim509.js" defer="defer"></script>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cws.auckland.ac.nz/nzsl/api/Logo"
+    />
+  </head>
+  <body>
+    <!-- Main container for content -->
+    <header>
+      <!-- <img src="https://cws.auckland.ac.nz/nzsl/api/Logo" alt="logo" style="width: 200px;"/> -->
+      <img src="./skim509.svg" alt="logo" style="max-width: 200px" />
+      <h1>Lets Learn NZSL</h1>
+    </header>
+
+    <nav>
+      <!-- Navigation bar -->
+      <ul>
+        <li><button id="HomeButton">Home</button></li>
+        <li><button id="NZSLButton">NZSL</button></li>
+        <li><button id="EventsButton">Events</button></li>
+        <li><button id="RegisterButton">Register</button></li>
+        <li><button id="GuestBookButton">Guest Book</button></li>
+        <li><button id="LogButton">Log</button></li>
+      </ul>
+    </nav>
+
+    <section id="Home">
+      <h2>Home</h2>
+      <p>
+        Welcome to our web application that helps us to learn a wee bit of NZSL.
+      </p>
+    </section>
+
+    <section id="NZSL" style="display: none">
+      <h2>NZSL</h2>
+      <input
+        id="searchInput"
+        type="text"
+        placeholder="search: id or description"
+      />
+      <ul id="signImageContainer"></ul>
+    </section>
+
+    <section id="Events" style="display: none">
+      <h2>Events</h2>
+      <ul id="eventContainer"></ul>
+    </section>
+
+    <section id="Register" style="display: none">
+      <h2>Register</h2>
+      <p>Username</p>
+      <input id="username" type="text" />
+      <p>Password</p>
+      <input id="password" type="text" />
+      <p>Address</p>
+      <input id="address" type="text" />
+
+      <button id="rb">Register</button>
+    </section>
+
+    <section id="GuestBook" style="display: none">
+      <h2>Guest Book</h2>
+      <p id="loginstatus"></p>
+      <button id="logout" style="display: none">logout</button>
+      <p>we appreciate your comments</p>
+
+      <div id="logincontainer" style="display: none">
+        <h3>Login</h3>
+        <p>Username</p>
+        <input id="loginUsername" />
+        <p>Password</p>
+        <input id="loginPassword" />
+        <button id="login">login</button>
+      </div>
+      <input id="commentInput" />
+      <button id="postComment">post comment</button>
+      <p>Comments</p>
+      <div id="commentContainer"></div>
+      <!-- <iframe src="https://cws.auckland.ac.nz/nzsl/api/Comments"></iframe> -->
+    </section>
+
+    <section id="Log">
+      <svg
+        id="graph"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 640 520"
+        style="max-width: 640"
+      >
+        <!-- X and Y axes -->
+        <text text-anchor="middle" x="320" y="20" font-zise="18">
+          VISIT LOG
+        </text>
+        <line
+          x1="50"
+          y1="350"
+          x2="620"
+          y2="350"
+          stroke="black"
+          stroke-width="2"
+        />
+        <!-- X-axis -->
+        <line
+          x1="50"
+          y1="350"
+          x2="50"
+          y2="50"
+          stroke="black"
+          stroke-width="2"
+        />
+        <!-- Y-axis -->
+
+        <polyline id="visits" fill="none" stroke="blue" stroke-width="2" />
+
+        <polyline id="uvisits" fill="none" stroke="red" stroke-width="2" />
+        <text id="min" x="30" y="350" font-size="12" text-anchor="end"></text>
+        <text id="max" x="30" y="50" font-size="12" text-anchor="end"></text>
+
+        <line x1="50" y1="420" x2="100" y2="420" stroke="blue"></line>
+        <text x="110" y="420" font-size="12">visits</text>
+        <line x1="50" y1="440" x2="100" y2="440" stroke="red"></line>
+        <text x="110" y="440" font-size="12">unique visits</text>
+
+        <text
+          id="visitData"
+          x="320"
+          y="480"
+          font-size="10"
+          text-anchor="middle"
+        ></text>
+        <text
+          id="uniqueVisitData"
+          x="320"
+          y="500"
+          font-size="10"
+          text-anchor="middle"
+        ></text>
+      </svg>
+    </section>
+
+    <div id="version"></div>
+  </body>
+</html>

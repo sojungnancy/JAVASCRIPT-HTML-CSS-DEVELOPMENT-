@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+    <path id="Thumb" d="M 47 143 L 47 85 Q 37 73 27 85 L 27 143 Q 37 155 47 143" stroke="#A8A8A8" fill="#A8A8A8"/>
+    <path id="Index" d="M 80 91 L 80 26 Q 70 14 60 26 L 60 91 Q 70 103 80 91" stroke="#A8A8A8" fill="#A8A8A8"/>
+    <path id="Middle" d="M 106 84 L 106 12 Q 96 0 86 12 L 86 84 Q 96 96 106 84" stroke="#A8A8A8" fill="#A8A8A8"/>
+    <path id="Ring" d="M 132 87 L 132 23 Q 122 11 112 23 L 112 87 Q 122 99 132 87" stroke="#A8A8A8" fill="#A8A8A8"/>
+    <path id="Pinky" d="M 158 107 L 158 50 Q 148 38 138 50 L 138 107 Q 148 119 158 107" stroke="#A8A8A8" fill="#A8A8A8"/>
+    <circle id = "Palm" cx="100" cy="143" r="50" fill="#A8A8A8"/>
+</svg>

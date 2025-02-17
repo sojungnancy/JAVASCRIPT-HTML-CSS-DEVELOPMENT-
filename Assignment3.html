@@ -1,0 +1,111 @@
+﻿<html>
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+   <title>Client-Side Development</title>
+</head>
+<body>
+   <div>
+      <h2>Client-Side Development</h2>
+      <p style="border: 1px solid red; border-radius: 5px; padding: 10px; background-color: pink; color: red;"><span style="font-size: xx-large;">⚠</span> Sharing assignment solutions and source code does not help learning. Consequently, our academic integrity policy does not permit sharing of solutions or source code leading to solutions, nor does it allow sourcing solutions or source code from any third party. Violation of this will result in your assignment submission attracting no marks, and you may face further disciplinary action. Therefore, please do not share assignments, assignment solutions and/or source code leading to assignment solutions, or use material from others in your assignments. You must not publish assignments or solutions in any form online at any time. You will be liable if someone copies your solution. There are also copyright and IP issues. Please come talk to us if you have any doubt over what is legitimate and what is not. <br />You can refer to online tutorials, generative-AI tools (such as ChatGPT) and online resources. However, please learn from them and implement the solutions yourself based on what you learnt from these sources. You must not copy from these sources. <br />Don't leave your computers, devices, and belongings unattended &mdash; you must secure these at all times to prevent anyone having access to your assignments or solutions. If others are found to have used your solution, you will also face disciplinary action.</p>
+      <h3>Background</h3>
+      <img style="width: 30%; max-width: 100px; display: inline-block; float: right; vertical-align: middle;" src="https://cws.auckland.ac.nz/nzsl/api/Logo" alt="Logo" />
+      <p>You are no doubt aware that Aotearoa New Zealand has three official languages: New Zealand Sign Language (NZSL, Te Reo Turi), Te Reo Māori, and English. We aim to design and develop a web application to learn NZSL, assisting beginners. The web app employs a service-oriented architecture, encompassing a UI front-end and a service back-end. The first two assignments asked you to contribute to constructing the service back-end, and this assignment continues your journey in helping to construct the front-end.</p>
+      <p>This assignment examines the separation of data from the UI, and how such data can be consumed and utilized in the end-user application. A subsequent assignment will delve into potential vulnerabilities that may surface when such an architecture is poorly implemented.</p>
+      <p>In the first two assignments, you implemented a handful of data sources that provide and update key information content. These data sources facilitate the separation of information content from its presentation.</p>
+      <p>Please read and understand the entire assignment before embarking on a solution.</p>
+      <h3>NZSL Web Application</h3>
+      <p>You are now ready to build the client application using the endpoints similar to those you developed in your first two assignments. The endpoints can be observed through the API documentation available at <a href="https://cws.auckland.ac.nz/nzsl/swagger/index.html">https://cws.auckland.ac.nz/nzsl/swagger/index.html</a> which also allows you to experiment with the endpoints. Note that not all endpoints are used.</p>
+      <p>The application should display the logo supplied by one of the server endpoints at an appropriate place, and should consist of the following logical sections:</p>
+      <dl>
+         <dt>🏠 Home</dt>
+         <dd>This section is the landing place containing an introduction to the application. Display the version of the server at the bottom of the section.</dd>
+         <dt>📖 NZSL</dt>
+         <dd>This section contains selected NZSL signs to learn. The list could grow large, so you will need to have a search bar to dynamically shrink the list. There is an endpoint to support this.</dd>
+         <dt>📅 Events</dt>
+         <dd>This section shows to the user a list of events as supplied by the server. The user is able to add selected events to their calendar.</dd>
+         <dt>👪 User Registration</dt>
+         <dd>This section allows a user to register by choosing a username and password, and providing an address.</dd>
+         <dt>👩 User Login</dt>
+         <dd>This section allows a registered user to login. Access to this section is only granted if a user is not logged in.</dd>
+         <dt>✍ Guest Book</dt>
+         <dd>This section shows recent comments from the users. It also allows registered users to enter comments.</dd>
+      </dl>
+      <p>Add a <a href="https://en.wikipedia.org/wiki/Favicon">favicon</a> depicting the logo for the application.</p>
+      <h3>Key Requirements</h3>
+      <p>The application should use a combination of HTML, CSS, and JavaScript. Where the application needs icons, please consider using an appropriate <a href="https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/">Unicode character</a> that represents the icon. For example, the icons used in this specification are all Unicode characters. We will look at another approach to constructing icons later on.</p>
+      <p>Please note the following requirements.</p>
+      <ol>
+         <li>You are <em>not</em> allowed to use any libraries or frameworks. (Why oh why?)</li>
+         <li>The application should contain a single HTML page (named <em>UPI.html</em> where <em>UPI</em> is your personal login name, such as jbon007).</li>
+         <li>The application should work on any modern browser (such as Chrome, Safari and Edge).</li>
+         <li>The application should work on small screen devices. You can test this using the mobile view supported by the developer console of the browser.
+         Note: you are not expected use CSS @media queries to style based on screen sizes. The mobile view requirement is to make sure you have
+         viewed your application solution using the mobile view and considered your layout options based on the mobile view.</li>
+         <li>There are submission requirements at the end of this document. Please read and understand the whole document before attempting a solution to the assignment.</li>
+      </ol>
+      <p>This application should be of a professional quality to attract full marks. You should pay attention to details.</p>
+      <h3>Bonus</h3>
+      <p>Develop a native Android or iOS application consuming the data sources provided. You should not use "boxing" techniques such as that provided by <a href="https://cordova.apache.org/">Apache Cordova</a>, but rather develop natively using Android Studio (use Kotlin) or XCode (use Swift). Compare the native application development effort to that of the web application.</p>
+      <p>The bonus part is optional.</p>
+      <h3>Submission</h3>
+      <p>Please submit to the <a href="https://adb.auckland.ac.nz/"> Assignment Dropbox </a> the following items.</p>
+      <ol>
+         <li>
+            The following source files of the application. (Note that images or other resources are not permitted. Images can be hot-linked from other sources if required.)
+            <ol type="a">
+               <li>The HTML file (called <em>UPI.html</em> where <em>UPI</em> is your UPI). A size limit of 300 kB will apply.</li>
+               <li>The CSS file (called <em>UPI.css</em> where <em>UPI</em> is your UPI). A size limit of 300 kB will apply.</li>
+               <li>The JavaScript file (called <em>UPI.js</em> where <em>UPI</em> is your UPI). A size limit of 300 kB will apply.</li>
+            </ol>
+         </li>
+         <li>A ZIP archive containing the source files of the bonus part &ndash; the native application. This is optional and applies only if you have done the bonus part.</li>
+      </ol>
+      <p>Please read the following important information regarding your submission.</p>
+      <ol>
+         <li>You can submit to ADB multiple times, and we mark the latest submission. So please <strong>submit your work when you achieve a key milestone</strong> (e.g., when you have completed the navigation between logical sections, and as you complete a major functionality in each logical section). This way, you have a partial submission to attract some marks even if you could not proceed further on the assignment in the last days before the final submission. This also shows us your steady progress rather than a last minute job.</li>
+         <li>You can download your submission to verify what you submitted to ADB. You must download and test your submission, putting yourself in the marker's shoes. This will iron out silly mistakes (such as incorrect filenames for .CSS and .JS files). If you don't do this testing, your submission might attract zero marks or a hefty penalty, so please do your part before the submission rather than after the marking.</li>
+         <li>There will <u>not</u> be any extensions possible, so please do not ask for extensions. If you are planning to start a couple of days prior to the deadline, you take the risk of not being able to complete the assignment.</li>
+      </ol>
+      <h3>Learning Outcomes</h3>
+      <ol>
+         <li>Be able to use Web APIs and consume data.</li>
+         <li>Be able to construct a sophisticated client application from the ground-up.</li>
+         <li>Get an appreciation of delays involved in client-server communication.</li>
+         <li>Be able handle data asynchronously.</li>
+         <li>Understand how to work with both HTTP GET and POST.</li>
+         <li>Be able to use authentication to secure parts of an application.</li>
+      </ol>
+      <h3>Test Plan</h3>
+      <p>You need to think about how you would test and validate your application. To help you get started, here are a few points that might help you.</p>
+      <ol>
+         <li>Showing the correct logo</li>
+         <li>Having the correct <a href="https://en.wikipedia.org/wiki/Favicon">favicon</a> for the application</li>
+         <li>Having the logical sections (e.g., home and guestbook) and being able to see only one section at a time</li>
+         <li>Being able to view the current set of comments</li>
+         <li>Being able to submit comments </li>
+         <li>Being able to see the list of signs </li>
+         <li>Being able to search the list of signs</li>
+         <li>Being able to shrink the list of signs dynamically</li>
+         <li>Being able to see the images of signs</li>
+         <li>Showing the current events in a readable format</li>
+         <li>Being able to see the start/end dates in NZ time (not UTC time)</li>
+         <li>Being able to download each calendar entry</li>
+         <li>Being able to successfully register a user</li>
+         <li>Showing the appropriate status message upon registration attempt</li>
+         <li>Showing an appropriate error message if logging in is unsuccessful</li>
+         <li>Login status (logged in or not) shown</li>
+         <li>Logout option available and functional (when logged in)</li>
+         <li>Post comment action re-directed to login if the user is not currently logged in</li>
+      </ol>
+      <p>Discussing your test plan on the discussion forum with your peers will be of use, and is strongly encouraged.</p>
+      <p>Developing a test plan is an important aspect of software development. If you don't do a good one, you stand to produce low quality software which can put off your customers. Please imagine you are a tester, and pay attention to forming a good test plan. Not only you form a test plan, but also you execute it carefully.</p>
+      <p>Please test every little step you take before you go to the next step. In your browser, always keep the debugger panel open during your testing. Make sure that there are no bugs reported there. When there are issues, please read the error message carefully. Almost always these error messages tell you what the problem is. Please read and try to understand these messages. If there are server errors, chances are that you are sending in a malformed request. Again read the error message carefully, and this will shed some light into what you might be doing wrong.</p>
+      <p>A short demo of a sample application is available <a href="#">here</a>.</p>
+      <h3>Important Notes</h3>
+      <ul>
+         <li>You should be carefully read and understand what the School of Computer Science expects from you in terms of academic integrity: <a href="https://academicintegrity.cs.auckland.ac.nz/">https://academicintegrity.cs.auckland.ac.nz/</a>. Non-compliance may result in losing all the marks. Pay attention to this too: <em> You must not post your solution online on public websites. Your online solutions will encourage other students to copy your solution. Private GitHub repositories and other private online storage drives are acceptable, and you can also share your solution privately with prospective employers. </em></li>
+         <li>Use of third party libraries and frameworks are not allowed. We will check for this, and there will be a substantial penalty for using them.</li>
+      </ul>
+   </div>
+</body>
+</html>
