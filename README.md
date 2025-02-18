@@ -5,7 +5,7 @@
 This repository contains the frontend implementation for the NZSL Web Application, integrating the **C# APIs** developed in previous assignments. It is a **service-oriented architecture (SOA) project** that provides an interactive platform for learning **New Zealand Sign Language (NZSL)**.
 
 ## 📝 Assignments Overview
-This repository contains assignments focused on frontend development using JavaScript, HTML, and CSS. The assignments integrate C# APIs to build a fully functional client-side application.
+This repository contains assignments focused on frontend development using JavaScript, HTML, and CSS. The assignments **integrate C# APIs (Fetching)** to build a fully functional client-side application.
 
 ### 1️⃣ Assignment 3: Initial Frontend Implementation
 - Developed a basic **client-side** interface using **HTML, CSS, and JavaScript.**
