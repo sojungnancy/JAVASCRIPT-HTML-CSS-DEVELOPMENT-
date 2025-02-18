@@ -29,6 +29,7 @@ Each assignment builds upon the previous one, refining the client-side applicati
 - **HTML5 & CSS3**
 - **RESTful API consumption**
 - **JSON-based data exchange**
+- **XML Schema**
 
 ## 📂 File Structure
 ### A3 & A4
