@@ -1,5 +1,5 @@
 # NZSL (New Zealand Sign Language)
-- Frontend Development
+- Frontend Development (integrate with backend API)
 
 > This repository contains the frontend implementation for the NZSL Web Application, integrating the **C# APIs** developed in previous assignments. It is a **service-oriented architecture (SOA) project** that provides an interactive platform for learning **New Zealand Sign Language (NZSL)**.
 
